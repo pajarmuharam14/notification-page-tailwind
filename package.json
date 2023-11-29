@@ -1,0 +1,24 @@
+{
+  "name": "notifications-page-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Notifications page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./dist/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pajarmuharam14/notification-page-tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pajarmuharam14/notification-page-tailwind/issues"
+  },
+  "homepage": "https://github.com/pajarmuharam14/notification-page-tailwind#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
