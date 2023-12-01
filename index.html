@@ -3,12 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="dist/style.css" />
     <title>Frontend Mentor | Notifications page</title>
   </head>
-  <body>
-    Notifications 3 Mark all as read Mark Webber reacted to your recent post My first tournament today! 1m ago Angela Gray followed you 5m ago Jacob Thompson has joined your group Chess Club 1 day ago Rizky Hasanuddin sent you a private
-    message 5 days ago Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game. Kimberly Smith commented on your picture 1 week ago Nathan Peterson reacted
-    to your recent post 5 end-game strategies to increase your win rate 2 weeks ago Anna Kim left the group Chess Club 2 weeks ago
+  <body class="font-jakarta bg-[hsl(210,60%,98%)]">
+    <main>
+      <div class="container border shadow-lg rounded-lg bg-[hsl(0,0%,100%)] md:mx-auto md:my-10 md:w-[700px]">
+        <div class="flex justify-between my-4">
+          <div class="title flex ml-3">
+            <h1 class="text-[20px] font-extrabold text-[hsl(224,21%,14%)]">Notifications</h1>
+            <span class="mx-2 font-extrabold border rounded-md px-3 text-[hsl(211,68%,94%)] bg-[hsl(219,85%,26%)]">3</span>
+          </div>
+          <p class="mr-3 text-[16px] mt-[3px] font-medium text-[hsl(219,12%,42%)] hover:text-[hsl(219,85%,26%)] cursor-pointer">Mark all as read</p>
+        </div>
+        <div class="notif">
+          <section class="unread-notif">
+            <div class="bg-[hsl(210,60%,98%)] my-2 rounded-lg flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
+              <img class="w-[50px]" src="./assets/images/avatar-mark-webber.webp" alt="" />
+              <div class="mt-4">
+                <p class="ml-2 text-[hsl(219,12%,42%)]">
+                  <span class="font-extrabold text-[hsl(224,21%,14%)] mr-1">Mark Webber</span> reacted to your recent post
+                  <span class="font-extrabold cursor-pointer hover:text-[hsl(219,85%,26%)]">My first tournament today!</span>
+                </p>
+                <span class="time ml-2 text-[hsl(219,14%,63%)]">1m ago</span>
+              </div>
+            </div>
+            <span class="dot"></span>
+            <div class="bg-[hsl(210,60%,98%)] my-2 rounded-lg flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
+              <img class="w-[50px]" src="./assets/images/avatar-angela-gray.webp" alt="" />
+              <div class="mt-4">
+                <p class="ml-2 text-[hsl(219,12%,42%)]"><span class="font-extrabold text-[hsl(224,21%,14%)] hover:text-[hsl(219,85%,26%)] cursor-pointer mr-1">Angela Gray</span> followed you</p>
+                <span class="time ml-2 text-[hsl(219,14%,63%)]">5m ago</span>
+              </div>
+            </div>
+            <div class="bg-[hsl(210,60%,98%)] my-2 rounded-lg flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
+              <img class="w-[50px]" src="./assets/images/avatar-jacob-thompson.webp" alt="" />
+              <div class="mt-4">
+                <p class="ml-2 text-[hsl(219,12%,42%)]"><span class="font-extrabold text-[hsl(224,21%,14%)] mr-1">Jacob Thompson</span> has joined your group <span class="text-[hsl(219,85%,26%)] font-extrabold ml-1">Chess Club</span></p>
+                <span class="time ml-2 text-[hsl(219,14%,63%)]">1 day ago</span>
+              </div>
+            </div>
+          </section>
+          <section class="read-notif">
+            <div class="my-2 flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
+              <img class="w-[50px]" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="" />
+              <div class="mt-4">
+                <p class="ml-2 text-[hsl(219,12%,42%)]"><span class="font-extrabold text-[hsl(224,21%,14%)] mr-1">Rizky Hasanuddin</span> sent you a private message</p>
+                <span class="time ml-2 text-[hsl(219,14%,63%)]">5 days ago</span>
+              </div>
+            </div>
+            <p class="message border rounded-md text-[hsl(219,12%,42%)] w-[280px] md:w-[550px] ml-16 md:ml-20 mt-[-12px] p-4 hover:bg-[hsl(205,33%,90%)] cursor-pointer">
+              Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+            </p>
+            <div class="my-2 flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3 md:relative">
+              <img class="w-[50px]" src="./assets/images/avatar-kimberly-smith.webp" alt="" />
+              <div class="mt-4">
+                <p class="ml-2 text-[hsl(219,12%,42%)]"><span class="font-extrabold text-[hsl(224,21%,14%)] mr-1">Kimberly Smith</span> commented on your picture</p>
+                <span class="time ml-2 text-[hsl(219,14%,63%)]">1 week ago</span>
+              </div>
+              <img class="w-[50px] mr-1 md:absolute md:right-12 cursor-pointer hover:border-2 border-[hsl(205,33%,90%)] p-1 rounded-md" src="./assets/images/image-chess.webp" alt="" />
+            </div>
+            <div class="my-2 flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
+              <img class="w-[50px] mt-[-25px]" src="./assets/images/avatar-nathan-peterson.webp" alt="" />
+              <div class="mt-4">
+                <p class="ml-2 text-[hsl(219,12%,42%)]">
+                  <span class="font-extrabold text-[hsl(224,21%,14%)] mr-[10px]">Nathan Peterson</span> reacted to your recent post 5 <span class="font-extrabold">end-game strategies to increase your win rate</span>
+                </p>
+                <span class="time ml-2 text-[hsl(219,14%,63%)]">2 weeks ago</span>
+              </div>
+            </div>
+            <div class="my-2 flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
+              <img class="w-[50px]" src="./assets/images/avatar-anna-kim.webp" alt="" />
+              <div class="mt-4">
+                <p class="ml-2 text-[hsl(219,12%,42%)]">
+                  <span class="font-extrabold text-[hsl(224,21%,14%)] mr-1">Anna Kim</span> left the group <span class="text-[hsl(219,85%,26%)] hover:text-[hsl(219,12%,42%)] font-extrabold cursor-pointer">Chess Club</span>
+                </p>
+                <span class="time ml-2 text-[hsl(219,14%,63%)]">2 weeks ago</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
