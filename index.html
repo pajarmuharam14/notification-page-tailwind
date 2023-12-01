@@ -13,41 +13,45 @@
     <main>
       <div class="container border shadow-lg rounded-lg bg-[hsl(0,0%,100%)] md:mx-auto md:my-10 md:w-[700px]">
         <div class="flex justify-between my-4">
-          <div class="title flex ml-3">
+          <div class="flex ml-4">
             <h1 class="text-[20px] font-extrabold text-[hsl(224,21%,14%)]">Notifications</h1>
-            <span class="mx-2 font-extrabold border rounded-md px-3 text-[hsl(211,68%,94%)] bg-[hsl(219,85%,26%)]">3</span>
+            <span class="mx-2 font-extrabold border rounded-md px-3 text-[hsl(211,68%,94%)] bg-[hsl(219,85%,26%)]" id="numberNotif">3</span>
           </div>
-          <p class="mr-3 text-[16px] mt-[3px] font-medium text-[hsl(219,12%,42%)] hover:text-[hsl(219,85%,26%)] cursor-pointer">Mark all as read</p>
+          <button class="mr-4 text-[16px] mt-[3px] font-medium text-[hsl(219,12%,42%)] hover:text-[hsl(219,85%,26%)]" id="mark-btn">Mark all as read</button>
         </div>
         <div class="notif">
-          <section class="unread-notif">
-            <div class="bg-[hsl(210,60%,98%)] my-2 rounded-lg flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
+          <section>
+            <div class="unread-notif bg-[hsl(210,60%,98%)] my-2 rounded-lg flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
               <img class="w-[50px]" src="./assets/images/avatar-mark-webber.webp" alt="" />
               <div class="mt-4">
                 <p class="ml-2 text-[hsl(219,12%,42%)]">
                   <span class="font-extrabold text-[hsl(224,21%,14%)] mr-1">Mark Webber</span> reacted to your recent post
-                  <span class="font-extrabold cursor-pointer hover:text-[hsl(219,85%,26%)]">My first tournament today!</span>
+                  <span class="font-extrabold cursor-pointer hover:text-[hsl(219,85%,26%)]"
+                    >My first tournament today!
+                    <div class="dot rounded-full w-[10px] h-[10px] bg-[hsl(1,90%,64%)] absolute right-14 top-[123px] md:right-[390px] md:top-[138px]"></div
+                  ></span>
                 </p>
                 <span class="time ml-2 text-[hsl(219,14%,63%)]">1m ago</span>
               </div>
             </div>
-            <span class="dot"></span>
-            <div class="bg-[hsl(210,60%,98%)] my-2 rounded-lg flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
+            <div class="unread-notif bg-[hsl(210,60%,98%)] my-2 rounded-lg flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
               <img class="w-[50px]" src="./assets/images/avatar-angela-gray.webp" alt="" />
               <div class="mt-4">
                 <p class="ml-2 text-[hsl(219,12%,42%)]"><span class="font-extrabold text-[hsl(224,21%,14%)] hover:text-[hsl(219,85%,26%)] cursor-pointer mr-1">Angela Gray</span> followed you</p>
+                <div class="dot rounded-full w-[10px] h-[10px] bg-[hsl(1,90%,64%)] absolute right-[100px] top-[219px] md:right-[718px] md:top-[235px]"></div>
                 <span class="time ml-2 text-[hsl(219,14%,63%)]">5m ago</span>
               </div>
             </div>
-            <div class="bg-[hsl(210,60%,98%)] my-2 rounded-lg flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
+            <div class="unread-notif bg-[hsl(210,60%,98%)] my-2 rounded-lg flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
               <img class="w-[50px]" src="./assets/images/avatar-jacob-thompson.webp" alt="" />
               <div class="mt-4">
-                <p class="ml-2 text-[hsl(219,12%,42%)]"><span class="font-extrabold text-[hsl(224,21%,14%)] mr-1">Jacob Thompson</span> has joined your group <span class="text-[hsl(219,85%,26%)] font-extrabold ml-1">Chess Club</span></p>
+                <p class="ml-3 text-[hsl(219,12%,42%)]"><span class="font-extrabold text-[hsl(224,21%,14%)] mr-1">Jacob Thompson</span> has joined your group <span class="text-[hsl(219,85%,26%)] font-extrabold ml-1">Chess Club</span></p>
+                <div class="dot rounded-full w-[10px] h-[10px] bg-[hsl(1,90%,64%)] absolute right-[155px] top-[339px] md:right-[520px] md:top-[331px]"></div>
                 <span class="time ml-2 text-[hsl(219,14%,63%)]">1 day ago</span>
               </div>
             </div>
           </section>
-          <section class="read-notif">
+          <section>
             <div class="my-2 flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
               <img class="w-[50px]" src="./assets/images/avatar-rizky-hasanuddin.webp" alt="" />
               <div class="mt-4">
@@ -67,7 +71,7 @@
               <img class="w-[50px] mr-1 md:absolute md:right-12 cursor-pointer hover:border-2 border-[hsl(205,33%,90%)] p-1 rounded-md" src="./assets/images/image-chess.webp" alt="" />
             </div>
             <div class="my-2 flex items-center mx-2 md:mx-4 px-1 md:px-3 py-3">
-              <img class="w-[50px] mt-[-25px]" src="./assets/images/avatar-nathan-peterson.webp" alt="" />
+              <img class="w-[50px] mt-[-25px] md:mt-[-10px]" src="./assets/images/avatar-nathan-peterson.webp" alt="" />
               <div class="mt-4">
                 <p class="ml-2 text-[hsl(219,12%,42%)]">
                   <span class="font-extrabold text-[hsl(224,21%,14%)] mr-[10px]">Nathan Peterson</span> reacted to your recent post 5 <span class="font-extrabold">end-game strategies to increase your win rate</span>
@@ -88,5 +92,6 @@
         </div>
       </div>
     </main>
+    <script src="./dist/index.js"></script>
   </body>
 </html>
