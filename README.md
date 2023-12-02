@@ -27,7 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](.assest/images/Screenshot-1.png)
+![](.assest/images/Screenshot-1.png
+)
 ![](.assest/images/Screenshot-2.png)
 ![](.assest/images/Screenshot-3.png)
 ![](.assest/images/Screenshot-4.png)
