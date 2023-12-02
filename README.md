@@ -28,7 +28,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./assets/images/avatar-jacob-thompson.webp)
-![](.assest/images/Screenshot-2.png)
+![](./assets/images/Screenshot-2.png)
 ![](.assest/images/Screenshot-3.png)
 ![](.assest/images/Screenshot-4.png)
 ![](.assest/images/Screenshot-5.png)
