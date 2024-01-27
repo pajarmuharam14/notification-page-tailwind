@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/notificationpagetailwindcss-HXO6W9E2KG)
-- Live Site URL: [Add live site URL here](https://pajarmuharam14.github.io/notification-page-tailwind/)
+- Solution URL: https://www.frontendmentor.io/solutions/notificationpagetailwindcss-HXO6W9E2KG
+- Live Site URL: https://pajarmuharam14.github.io/notification-page-tailwind/
 
 ## My process
 
